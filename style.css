@@ -77,8 +77,12 @@ svg {
   padding: 20px;
   opacity: 1;
   will-change: transform;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; 
+  border-bottom: 1px solid rgb(133, 129, 117);
+
 }
+
+
 
 svg.active {
   opacity: 1;
