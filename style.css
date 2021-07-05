@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Barrow";
+    src: url("./font/Barrow2Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1a1a;
+    width: 100%;
+    height: 100vh;
+    overscroll-behavior: none;
+}
+
+h1 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: "Barrow";
+    font-size: 10rem;
+    color: rgb(231, 226, 216);
+    mix-blend-mode: difference;
+    letter-spacing: 5px;
+    border-bottom: 3px solid rgb(231, 226, 216);
+}
+
+main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180vw;
+    height: 100%;
+    background: #1b1a1a;
+    border: 10px solid rgb(231, 226, 216);
+    will-change: transform;
+}
+
+.slider-inner-one {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    will-change: transform;
+}
+
+.slider-inner-two {
+    position: absolute;
+    left: 40vw;
+    top: 40vh;
+    width: 120%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    will-change: transform;
+}
+
+svg {
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    opacity: 1;
+    will-change: transform;
+    transition: all 0.5s ease-in-out;
+}
+
+svg.active {
+    opacity: 1;
+}
